@@ -1,0 +1,12 @@
+<input name="username" [(ngModel)]="username">
+<p>{{ username }}</p>
+<input type="button" [disabled]="username === ''" value="submit" (click)="username = ''">
+<!-- 
+<button (click)="toggleDisplay()">Display Details</button>
+<p *ngIf="disp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus adipisci fugiat sequi omnis
+    consectetur
+    enim laboriosam harum necessitatibus soluta?</p>
+<div *ngFor="let log of clicklog" [ngStyle]="{backgroundColor: log.index>=5? 'blue': ''}"
+    [ngClass]="{'text-white': log.index>=5}"> {{
+    log.timestamp }} {{ log.index}}
+</div> -->
